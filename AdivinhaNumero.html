@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>AdivinhaNumero</title>
+
+    <style>
+        body {
+			background: gray; 
+
+		}
+
+        h1 {
+            color: white;
+            font-size: 60px;
+        }
+
+		h2 {
+            color: white;
+            font-size: 50px;
+        }
+        .img {
+            position: absolute; top: 0px; left: 470px; width: 900px; height: 620px
+        }
+
+
+    </style>
+
+
+    <script>
+        var numeroGeradoPC = Math.round(Math.random() * 100);
+        console.log(numeroGeradoPC);
+        var tentativa = 1;
+        while (tentativa <= 3) {
+            var chute = prompt("Digite um número:");
+            if (chute == numeroGeradoPC) {
+				alert("Numero CORRETO!")
+              
+
+                break;
+            } else {
+                alert("Tente novamente outro Numero!")
+                tentativa = tentativa + 1;
+            }
+        };
+
+    </script>
+
+</head>
+
+	<span>
+    <img class="img" src="https://3.bp.blogspot.com/-NouNlYiWGzc/XAfxpD_TqsI/AAAAAAAATLo/6Q5HkY8gOgcOGmdnI5Uvd3gNwHuzBh52QCLcBGAs/s1600/publiquei.jpg"/>
+
+	<h1>Você não acertou! </h1>
+    <h2> Tente novamente!</h2>
+	
+	</span>
+</body>
+</html>
